@@ -1,0 +1,18 @@
+{
+  "name": "inm320-assign3-css-precompiler",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "goserver": "lite-server --baseDir=\"public\"",
+    "good": "sass --watch src/scss:public/assets/css",
+    "start": "concurrently \"npm run goserver\" \"npm run good\""
+  },
+  "author": "Sandy Wang",
+  "license": "ISC",
+  "description": "",
+  "devDependencies": {
+    "concurrently": "^9.2.1",
+    "lite-server": "^2.6.1",
+    "sass": "^1.97.3"
+  }
+}
